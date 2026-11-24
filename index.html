@@ -101,15 +101,15 @@ border:2px solid rgba(11,26,82,.25);border-radius:999px;padding:16px 26px;cursor
 
   <section>
     <div class="izq">
-      <h2 class="rv">Gracias por hacer de 2026 un año Yale</h2>
-      <p class="rv" style="--d:.15s">Detrás de cada tienda abierta, cada pedido surtido y cada cliente que se va contento hay alguien de este equipo. Esta Navidad queremos decírtelo sin letras chiquitas: gracias.</p>
+      <h2 class="rv">Gracias por hacer de este 2026 un año Yale</h2>
+      <p class="rv" style="--d:.15s">Detrás de cada tienda abierta, cada pedido surtido y cada cliente que se va contento... hay alguien de este equipo. Esta Navidad queremos decirte: ¡Gracias!.</p>
     </div>
   </section>
 
   <section>
     <div class="centro">
-      <h2 class="rv">Cada adorno guarda un deseo</h2>
-      <p class="rv" style="--d:.15s">Toca cualquiera de los adornos que flotan a los lados, o deja que el azar elija uno. Rómpelo y descubre el mensaje que guarda dentro.</p>
+      <h2 class="rv">Cada esfera guarda un deseo</h2>
+      <p class="rv" style="--d:.15s">Toca cualquiera de las esferas que flotan a los lados, o deja que el azar elija uno. Rómpelo y descubre el mensaje que guarda dentro.</p>
       <button class="btn rv" id="abrir" type="button" style="--d:.3s">Abrir un deseo</button>
     </div>
   </section>
@@ -147,22 +147,22 @@ const $=s=>document.querySelector(s);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const wishes=[
  'Feliz Navidad. Que no falten el ponche ni la buena compañía.',
- 'Que la paz de esta noche te acompañe todo el año.',
- 'Cada prenda Yale empieza con una persona como tú. Gracias.',
+ 'Que la paz, amor y alegría de esta noche te acompañe todo el año.',
+ 'Que la magia de la Navidad ilumine tus días y te regale momentos inolvidables.',
  'Brindemos por todo lo que logramos juntos en 2026.',
- 'Próspero 2027: que cada meta te quede a la medida.',
+ 'Próspero 2027: que cada meta que tienes, se cumpla.',
  'Que tu casa tenga luz, tu mesa abundancia y tu corazón calma.',
  'Lo mejor de Yale siempre ha sido su gente.',
  'Felices fiestas para ti y para toda tu familia.',
  'Que 2027 te encuentre con salud, trabajo y mucha alegría.',
- 'Gracias por cada día de esfuerzo. Esta Navidad, descansa y disfruta.',
+ 'Gracias por cada día de esfuerzo y compromiso, ¡Feliz Navidad!.',
  'Que los abrazos de estas fiestas te recarguen para el año que viene.',
  'Que el mejor regalo de este año sea tiempo con quienes más quieres.'];
 
 /* aviso inferior (brindis) */
 const box=$('#deseo'),txt=$('#deseoTxt');let hideT;
 function show(t){txt.textContent=t;box.classList.add('on');clearTimeout(hideT);hideT=setTimeout(()=>box.classList.remove('on'),6500);}
-let burst=()=>show('¡Salud! Por un 2027 lleno de buenas noticias.');
+let burst=()=>show('¡Salud! Por un 2027 donde no falte el ánimo, el cariño ni las ganas de celebrar la vida.');
 $('#brindar').onclick=()=>burst();
 
 /* tarjeta del deseo revelado */
