@@ -80,17 +80,17 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
 </head>
 <body>
 <canvas id="c" aria-hidden="true"></canvas>
-<header class="marca"><img src="logo-yale.svg" width="499" height="213" alt="Yale, desde 1950"></header>
+<header class="marca"><img src="yale navidad.png" width="499" height="213" alt="Yale, desde 1950"></header>
 <main>
   <section>
     <div class="hero">
       <div>
         <h1 class="rv">Feliz Navidad, equipo Yale</h1>
-        <p class="lead rv" style="--d:.2s">Desde 1950 nos vestimos de fiesta contigo. Este diciembre, el zorro trae un mensaje para ti.</p>
+        <p class="lead rv" style="--d:.2s">Desde 1950 nos vestimos de fiesta contigo. Este diciembre, queremos compartir contigo algunos de los momentos que vivimos este año.</p>
         <p class="cue rv" style="--d:.4s">Baja para seguir la historia.</p>
       </div>
       <figure class="frame rv" id="fr" style="--d:.3s">
-        <video id="vid" autoplay muted loop playsinline preload="metadata" poster="mascota-yale.png" aria-label="Video de la mascota de Yale con un mensaje navideño">
+        <video id="vid" autoplay muted loop playsinline preload="metadata" poster="Mascota yale.png" aria-label="Video de la mascota de Yale con un mensaje navideño">
           <source src="mascota-yale.mp4" type="video/mp4">
         </video>
         <button class="snd" id="snd" type="button" aria-pressed="false">Activar sonido</button>
@@ -101,14 +101,14 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
   <section>
     <div class="izq">
       <h2 class="rv">Gracias por hacer de 2026 un año Yale</h2>
-      <p class="rv" style="--d:.15s">Detrás de cada tienda abierta, cada pedido surtido y cada cliente que se va contento hay alguien de este equipo. Esta Navidad queremos decírtelo sin letras chiquitas: gracias.</p>
+      <p class="rv" style="--d:.15s">Detrás de cada tienda abierta, cada pedido surtido y cada cliente que se va contento hay alguien de este equipo. Esta Navidad queremos decirte: ¡Gracias!.</p>
     </div>
   </section>
 
   <section id="albsec">
     <div class="centro" style="max-width:1000px;width:100%">
       <h2 class="rv">Nuestro año, en fotos</h2>
-      <p class="rv" style="--d:.15s">Tiendas, bodegas, oficinas y equipos: los momentos que hicieron de 2026 un año Yale.</p>
+      <p class="rv" style="--d:.15s"> Administrativos, Producción, Calidad, Mantenimiento: los momentos que hicieron de 2026 un año Yale.</p>
       <div class="album rv" id="alb" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Álbum de fotos de Yale 2026" style="--d:.3s">
         <div class="bar" id="bar"></div>
         <img id="fa" alt=""><img id="fb" alt="">
@@ -125,8 +125,8 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
 
   <section>
     <div class="centro">
-      <h2 class="rv">Cada adorno guarda un deseo</h2>
-      <p class="rv" style="--d:.15s">Toca cualquiera de los adornos que flotan a los lados, o abre uno desde aquí.</p>
+      <h2 class="rv">Cada esfera guarda un deseo</h2>
+      <p class="rv" style="--d:.15s">Toca cualquiera de las esferas que flotan a los lados, o abre uno desde aquí.</p>
       <button class="btn rv" id="abrir" type="button" style="--d:.3s">Abrir un deseo</button>
     </div>
   </section>
@@ -134,7 +134,7 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
   <section>
     <div class="centro">
       <h2 class="rv">Feliz y próspero 2027</h2>
-      <p class="rv" style="--d:.15s">Que el año que viene te quede a la medida. Para el Año Nuevo faltan:</p>
+      <p class="rv" style="--d:.15s">Que el año que viene sea el mejor para ti. Para el Año Nuevo faltan:</p>
       <div class="cd rv" id="cd" style="--d:.3s" role="timer" aria-label="Cuenta regresiva al Año Nuevo 2027">
         <div><b id="d">0</b><span>días</span></div><div><b id="h">0</b><span>horas</span></div>
         <div><b id="m">0</b><span>min</span></div><div><b id="s">0</b><span>seg</span></div>
@@ -146,7 +146,7 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
   </section>
 </main>
 <button class="musica" id="bm" type="button" aria-pressed="false">Música: no</button>
-<audio id="mus" src="musica-fondo.mp3" loop preload="none"></audio>
+<audio id="mus" src="Musicayale.mp3" loop preload="none"></audio>
 <div id="deseo" role="status" aria-live="polite"><span id="deseoTxt"></span></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -156,17 +156,17 @@ const $=s=>document.querySelector(s);
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const wishes=[
  'Feliz Navidad. Que no falten el ponche ni la buena compañía.',
- 'Que la paz de esta noche te acompañe todo el año.',
- 'Cada prenda Yale empieza con una persona como tú. Gracias.',
- 'Brindemos por todo lo que logramos juntos en 2026.',
- 'Próspero 2027: que cada meta te quede a la medida.',
+ 'Que la paz, amor y alegría de esta noche te acompañe todo el año.',
+ 'Que esta Navidad te regale momentos inolvidables junto a quienes más quieres.',
+ 'Que la luz de esta Navidad traiga calma, esperanza y nuevas metas cumplidas.',
+ 'Próspero 2027: que cada una de tus metas, se cumpla.',
  'Que tu casa tenga luz, tu mesa abundancia y tu corazón calma.',
  'Lo mejor de Yale siempre ha sido su gente.',
- 'Felices fiestas para ti y para toda tu familia.'];
+ 'Tu aporte hizo la diferencia este año. Disfruta mucho estas fiestas y recarga energías para lo que viene. ¡Felices fiestas!.'];
 const box=$('#deseo'),txt=$('#deseoTxt');let hideT,wi=0;
 function show(t){txt.textContent=t;box.classList.add('on');clearTimeout(hideT);hideT=setTimeout(()=>box.classList.remove('on'),6500);}
 const wish=n=>show(wishes[n%wishes.length]);
-let openOne=()=>wish(wi++),burst=()=>show('¡Salud! Por un 2027 lleno de buenas noticias.');
+let openOne=()=>wish(wi++),burst=()=>show('¡Salud! Por un 2027 lleno de buenas vibras y mucho éxito.');
 $('#abrir').onclick=()=>openOne();
 $('#brindar').onclick=()=>burst();
 
