@@ -282,11 +282,11 @@ const TOTAL=40,RUTA='fotos/',EXT='jpg';
 /* EDITA AQUÍ los grupos de fotos: desde/hasta = número de foto (foto-01 = 1), titulo = texto que se muestra.
    Puedes agregar, quitar o cambiar grupos; las fotos sin grupo no muestran título. */
 const GRUPOS=[
- {desde:1, hasta:6, titulo:'Así empezó el año'},
- {desde:7, hasta:13,titulo:'Tiendas en movimiento'},
- {desde:14,hasta:20,titulo:'Bodegas y logística'},
- {desde:21,hasta:27,titulo:'Nuestros equipos'},
- {desde:28,hasta:34,titulo:'Celebraciones'},
+ {desde:1, hasta:6, titulo:'Así empezó el año...'},
+ {desde:7, hasta:13,titulo:'Muchos cumpleaños celebrados...'},
+ {desde:14,hasta:20,titulo:'Yale siempre participando...'},
+ {desde:21,hasta:27,titulo:'La familia Yale...'},
+ {desde:28,hasta:34,titulo:'Reconociendo el trabajo...'},
  {desde:35,hasta:40,titulo:'Cerrando el año juntos'}
 ];
 const urls=Array.from({length:TOTAL},(_,i)=>RUTA+'foto-'+String(i+1).padStart(2,'0')+'.'+EXT);
