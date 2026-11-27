@@ -197,7 +197,7 @@ border-left:8px solid var(--rojo);font-weight:600;box-shadow:0 20px 40px rgba(2,
         <div><b id="m">0</b><span>min</span></div><div><b id="s">0</b><span>seg</span></div>
       </div>
       <button class="btn rv" id="brindar" type="button" style="--d:.45s">¡Brindemos!</button>
-      <img class="logo-fin rv" src="logo-yale.svg" width="499" height="213" alt="" style="--d:.55s">
+      <img class="logo-fin rv" src="yalenavidad.png" width="499" height="213" alt="" style="--d:.55s">
       <p class="firma rv" style="--d:.7s"><i></i>¡Con cariño, tu familia Yale!<i></i></p>
     </div>
   </section>
@@ -237,7 +237,7 @@ function revela(){cajaTxt.textContent=nextWish();caja.classList.add('on');abrir.
 function romper(){if(est!=='idle')return;est='sorteo';abrir.disabled=true;abrir.textContent='Eligiendo…';
  if(bigPick)bigPick(revela);else setTimeout(revela,500);}
 function otro(){if(est!=='abierto')return;caja.classList.remove('on');est='idle';if(bigReset)bigReset();setTimeout(romper,650);}
-let burst=()=>show('¡Salud! Por un 2027 lleno de buenas noticias.');
+let burst=()=>show('¡Salud! Por un 2027 lleno de bienestar, risas y momentos que se quedan en el corazón.');
 abrir.onclick=()=>est==='idle'?romper():otro();
 esc.onclick=()=>{if(est==='idle')romper();};
 $('#brindar').onclick=()=>burst();
@@ -389,7 +389,7 @@ function init(){
  let ct=0;
  const spray=()=>{for(let i=0;i<CN;i++){CP.set([(Math.random()-.5)*2,-3,-8],i*3);CV.set([(Math.random()-.5)*9,5+Math.random()*6,(Math.random()-.5)*3],i*3);}
   conf.visible=true;ct=3.2;};
- burst=()=>{spray();show('¡Salud! Por un 2027 lleno de buenas noticias.');};
+ burst=()=>{spray();show('¡Salud! Por un 2027 lleno de bienestar, risas y momentos que se quedan en el corazón.');};
 
  /* interacción */
  const ray=new THREE.Raycaster(),v=new THREE.Vector2();let mx=0,hover=null,sp=0,xr=5,last=0;
